@@ -1,65 +1,85 @@
-import { Star, ShieldCheck, MessageSquareText, CheckCircle2 } from "lucide-react"
+import { MapPin, Star, Search, BarChart3, CheckCircle2 } from "lucide-react"
 import { NeomorphCTA } from "@/components/ui/neomorph-cta"
 
 const services = [
   {
+    icon: MapPin,
+    tag: "Fiche GMB",
+    title: "Une fiche Google My Business qui convertit vraiment",
+    stat: "3x",
+    statLabel: "plus de clics en moyenne",
+    description:
+      "Photos, description, catégories, attributs, Q&A, produits/services : on optimise chaque élément de votre fiche pour que Google vous affiche en premier sur les recherches locales.",
+    bullets: [
+      "Optimisation complète de tous les champs de la fiche",
+      "Photos professionnelles et mises à jour régulières",
+      "Posts GMB hebdomadaires pour booster la visibilité",
+    ],
+  },
+  {
     icon: Star,
-    tag: "Collecte",
-    title: "Vos clients satisfaits deviennent vos ambassadeurs",
-    stat: "35%",
-    statLabel: "de taux de conversion",
-    description: "Apres chaque visite, on invite automatiquement vos clients a laisser un avis. SMS, email, QR code : la bonne methode au bon moment.",
+    tag: "Avis clients",
+    title: "Plus d'avis 5★, répondus en moins de 24h",
+    stat: "4.7/5",
+    statLabel: "note moyenne atteinte",
+    description:
+      "On met en place un système automatisé pour collecter des avis après chaque prestation, et on rédige des réponses professionnelles à chaque commentaire — positif ou négatif.",
     bullets: [
-      "Invitations automatiques post-visite",
-      "Lien direct Google, TripAdvisor, Trustpilot",
-      "QR code personnalise pour votre comptoir",
+      "Campagnes de collecte d'avis post-visite automatisées",
+      "Réponses personnalisées à 100% des avis",
+      "Gestion et contestation des avis injustes",
     ],
   },
   {
-    icon: ShieldCheck,
-    tag: "Protection",
-    title: "Les avis injustes n'ont plus le dernier mot",
-    stat: "85%",
-    statLabel: "de taux de retrait",
-    description: "Faux avis, diffamation, conflit d'interet : nos experts identifient et contestent chaque avis non conforme aux CGU des plateformes.",
+    icon: Search,
+    tag: "SEO local",
+    title: "Apparaître en tête des recherches dans votre zone",
+    stat: "#1",
+    statLabel: "sur Google Maps",
+    description:
+      "Cohérence NAP sur 50+ annuaires, backlinks locaux, optimisation des mots-clés de proximité : on construit votre autorité locale pour que Google vous positionne devant vos concurrents.",
     bullets: [
-      "Analyse juridique de chaque avis signale",
-      "Contestation formelle aupres des plateformes",
-      "Suivi du dossier jusqu'a resolution complete",
+      "Audit et correction des citations locales (NAP)",
+      "Référencement sur les 50+ annuaires clés",
+      "Stratégie de mots-clés locaux ciblée",
     ],
   },
   {
-    icon: MessageSquareText,
-    tag: "Reponses",
-    title: "Chaque avis recoit une reponse pro en moins de 15 minutes",
-    stat: "<15min",
-    statLabel: "de temps de reponse",
-    description: "Reponses professionnelles calibrees sur votre ton de marque. Mode automatique ou validation manuelle, vous choisissez.",
+    icon: BarChart3,
+    tag: "Reporting",
+    title: "Des chiffres concrets, pas des promesses",
+    stat: "100%",
+    statLabel: "transparent",
+    description:
+      "Tableau de bord mensuel avec vos positions sur Google Maps, nombre de vues sur votre fiche, appels générés, demandes d'itinéraire — l'impact business mesuré.",
     bullets: [
-      "Reponses adaptees a votre image de marque",
-      "Mode auto ou validation avant publication",
-      "Google, Facebook, TripAdvisor couverts",
+      "Dashboard en temps réel accessible 24h/24",
+      "Rapport mensuel avec évolution des positions",
+      "Suivi du ROI : appels, visites, demandes d'itinéraire",
     ],
   },
 ]
 
 export function Features() {
   return (
-    <section id="features" className="py-32 md:py-40">
+    <section id="features" className="py-24 md:py-36">
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-            Nos expertises
+            Nos services
           </p>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground md:text-5xl text-balance">
-            {"Trois leviers pour reprendre "}
-            <span className="font-serif italic text-accent">{"la maîtrise de votre réputation"}</span>
+            {"Quatre leviers pour "}
+            <span className="font-serif italic text-accent">dominer Google Maps</span>
           </h2>
+          <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            Une approche complète et clé en main — vous vous concentrez sur votre métier, on gère votre visibilité locale.
+          </p>
         </div>
 
-        {/* Service cards -- more whitespace, clearer hierarchy */}
-        <div className="mt-24 space-y-8">
+        {/* Service cards */}
+        <div className="mt-20 space-y-8">
           {services.map((s, idx) => (
             <div
               key={s.title}
@@ -93,7 +113,7 @@ export function Features() {
               <div className={`flex items-center justify-center md:col-span-2 ${idx % 2 === 1 ? "md:order-1" : ""}`}>
                 <div className="flex flex-col items-center rounded-3xl border border-dashed border-accent/20 bg-accent/[0.03] px-14 py-12">
                   <span className="text-6xl font-bold tracking-tight text-accent md:text-7xl">{s.stat}</span>
-                  <span className="mt-3 text-sm font-medium text-muted-foreground">{s.statLabel}</span>
+                  <span className="mt-3 text-sm font-medium text-muted-foreground text-center">{s.statLabel}</span>
                 </div>
               </div>
             </div>
@@ -103,7 +123,7 @@ export function Features() {
         {/* CTA */}
         <div className="mt-20 text-center">
           <NeomorphCTA href="#pricing">
-            {"Booster ma réputation"}
+            Optimiser ma fiche GMB
           </NeomorphCTA>
         </div>
       </div>

@@ -10,45 +10,45 @@ import { NeomorphCTA } from "@/components/ui/neomorph-cta"
 
 const faqs = [
   {
-    question: "Est-ce legal de contester des avis en ligne ?",
+    question: "Combien de temps pour voir des résultats sur Google Maps ?",
     answer:
-      "Oui, a 100%. Nous ne supprimons pas les avis parce qu'ils sont negatifs. Nous contestons uniquement ceux qui violent les CGU des plateformes : faux avis, diffamation, conflit d'interet, spam. Chaque contestation est fondee juridiquement.",
+      "Les premiers résultats sont visibles entre 2 et 4 semaines : amélioration des positions, augmentation des vues sur la fiche et des appels entrants. Les résultats se consolident sur 2 à 3 mois selon la concurrence de votre zone.",
   },
   {
-    question: "Que comprend exactement le diagnostic gratuit ?",
+    question: "Est-ce que vous avez besoin de mon accès à ma fiche Google ?",
     answer:
-      "15 minutes avec un expert : analyse de votre note sur toutes les plateformes, identification des avis contestables, recommandations de collecte, et simulation d'impact sur votre CA. Vous repartez avec un plan d'action chiffre.",
+      "Oui, on vous demande un accès gestionnaire à votre fiche GMB pour pouvoir l'optimiser directement. C'est simple à faire (2 minutes) et vous gardez le contrôle total de votre fiche à tout moment.",
   },
   {
-    question: "Le diagnostic m'engage-t-il a quelque chose ?",
+    question: "Qu'est-ce qui est inclus dans l'audit gratuit ?",
     answer:
-      "Non. Le diagnostic est 100% gratuit, sans engagement. C'est un echange consultatif. Vous decidez ensuite librement. Zero pression commerciale.",
+      "L'audit inclut : analyse de votre fiche GMB actuelle, benchmark de vos 3 concurrents principaux sur Google Maps, identification des axes d'amélioration prioritaires, et estimation de gain de positions réaliste. Résultats envoyés sous 48h.",
   },
   {
-    question: "Quelles plateformes sont couvertes ?",
+    question: "Je n'ai pas de fiche Google My Business. Vous pouvez en créer une ?",
     answer:
-      "Google Business, TripAdvisor, Facebook, Trustpilot, Yelp, Booking.com, Pages Jaunes et d'autres. Si votre plateforme n'est pas dans la liste, contactez-nous.",
+      "Absolument. On crée votre fiche de A à Z, on gère la vérification avec Google et on l'optimise dès le départ. Vous démarrez avec une fiche déjà au niveau.",
   },
   {
-    question: "En combien de temps voit-on des resultats ?",
+    question: "Est-ce que vous gérez aussi les avis négatifs injustes ?",
     answer:
-      "Amelioration de la note des les 2-3 premieres semaines (collecte). Contestation d'avis : 5 a 15 jours ouvrables. Resultats significatifs et mesurables au bout de 1 mois.",
+      "Oui. On identifie les avis qui violent les CGU de Google (faux avis, concurrents mal intentionnés, avis hors sujet) et on les conteste formellement auprès de Google. Taux de retrait moyen : 70% sur les avis signalés.",
   },
   {
-    question: "Pour quel type d'entreprise ?",
+    question: "Pour quelle taille d'entreprise est-ce adapté ?",
     answer:
-      "Restaurants, Hotels, Cabinets medicaux, Salons de coiffure, Agences immobilieres, Artisans, Commerces... Toute entreprise dont l'activite depend des avis en ligne.",
+      "LocalRank est conçu pour les TPE et PME avec une clientèle locale : artisans, restaurants, commerces, professions libérales, agences... Si vous avez moins de 50 salariés et une zone de chalandise géographique, c'est fait pour vous.",
   },
   {
-    question: "Comment fonctionnent les reponses automatiques ?",
+    question: "Est-ce que ça fonctionne aussi si j'ai plusieurs établissements ?",
     answer:
-      "Reponses professionnelles generees et calibrees sur votre ton de marque. Deux modes : validation avant publication ou automatique. Temps de reponse moyen : moins de 15 minutes.",
+      "Oui, on gère les fiches multi-établissements. Chaque fiche est optimisée individuellement selon sa zone et sa concurrence locale. Contactez-nous pour un devis adapté.",
   },
 ]
 
 export function Faq() {
   return (
-    <section id="faq" className="py-32 md:py-40 bg-muted/30">
+    <section id="faq" className="py-24 md:py-36 bg-muted/30">
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
@@ -57,7 +57,7 @@ export function Faq() {
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
             {"Vos "}
             <span className="font-serif italic text-accent">questions</span>
-            {", nos reponses"}
+            {", nos réponses"}
           </h2>
         </div>
 
@@ -77,7 +77,7 @@ export function Faq() {
         <div className="mt-16 text-center">
           <div className="mt-5">
             <NeomorphCTA href="#pricing">
-              {"Passer à l'action"}
+              Passer à l'action
             </NeomorphCTA>
           </div>
         </div>
